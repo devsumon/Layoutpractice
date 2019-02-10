@@ -37,17 +37,39 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9:30\n\n Jan 10, 2019"
+            android:textColor="#fff"
+            android:layout_alignTop="@id/weather"
+
+            />
 
         <ImageButton
             android:id="@+id/weather"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="9:30\n\n Jan 10, 2019"
-            android:layout_toLeftOf="@id/email"
-            android:textSize="16dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+
             android:background="#f9b258"
-            android:textColor="#555555"/>
+            android:textColor="#fff"
+            android:src="@mipmap/sun"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25\n\n NEW WORK"
+            android:textColor="#fff"
+            android:layout_alignBottom="@id/weather"
+            android:gravity="center_vertical"
+
+            />
 
 
 
@@ -56,11 +78,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#95d8e9"
-            android:layout_toRightOf="@+id/weather"
             android:layout_margin="10dp"
-            android:padding="30dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/email"/>
+            android:padding="40dp"
+            android:src="@mipmap/email"
+            android:layout_toRightOf="@id/weather"
+
+            />
+
+        <ImageButton
+            android:id="@+id/cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:layout_margin="10dp"
+            android:padding="40dp"
+            android:src="@mipmap/cloud"
+            android:layout_toRightOf="@id/weather"
+            android:layout_below="@id/email"
+
+            />
+
 
 
 
