@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        android:background="#f48059">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLAT UI KIT"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textSize="50dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:30\n\n Jan 10, 2019"
+            android:layout_toLeftOf="@id/email"
+            android:textSize="16dp"
+            android:background="#f9b258"
+            android:textColor="#555555"/>
+
+
+
+        <ImageButton
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95d8e9"
+            android:layout_toRightOf="@+id/weather"
+            android:layout_margin="10dp"
+            android:padding="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/email"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:padding="30dp"
+            android:text="www"
+            android:textAllCaps="true"
+            android:drawableLeft="@mipmap/search"
+            android:background="#f6825b"
+            android:textColor="#fff"
+            android:textSize="22dp"
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="30dp"
+            android:src="@mipmap/clock"
+            android:background="#f9b258"
+
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/simpleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:text="Now Playing"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:drawableLeft="@mipmap/musicplayer"
+        android:background="#95d8e9"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
