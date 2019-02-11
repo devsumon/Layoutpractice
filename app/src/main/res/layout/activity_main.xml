@@ -6,166 +6,204 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="13"
 
     >
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="12dp"
-        android:background="#f48059">
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#F5815B"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FLAT UI KIT"
-            android:gravity="center_horizontal"
-            android:paddingTop="50dp"
-            android:paddingBottom="50dp"
-            android:textColor="#fff"
-            android:textAllCaps="true"
-            android:textSize="50dp"
-
-            />
-
-
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-       >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NEW WORK"
-            android:textColor="#fff"
-            android:layout_alignBottom="@id/weather"
-            android:gravity="center"
-            android:layout_marginLeft="80dp"
-            android:layout_above="@id/weather"
-
-            />
-
-        <ImageButton
-            android:id="@+id/weather"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:background="#f9b258"
-            android:textColor="#fff"
-            android:src="@mipmap/sun"
-
-
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="25\n\n NEW WORK"
-            android:textColor="#fff"
-            android:layout_alignBottom="@id/weather"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="80dp"
-
-            />
-
-
-
-        <ImageButton
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#95d8e9"
-            android:layout_margin="10dp"
-            android:padding="40dp"
-            android:src="@mipmap/email"
-            android:layout_toRightOf="@id/weather"
-
-            />
-
-        <ImageButton
-            android:id="@+id/cloud"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#666666"
-            android:layout_margin="10dp"
-            android:padding="40dp"
-            android:src="@mipmap/cloud"
-            android:layout_toRightOf="@id/weather"
-            android:layout_below="@id/email"
-
-            />
-
-
-
-
-
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="2">
 
-        >
-
-        <Button
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:layout_margin="10dp"
-            android:padding="30dp"
-            android:text="www"
-            android:textAllCaps="true"
-            android:drawableLeft="@mipmap/search"
-            android:background="#f6825b"
-            android:textColor="#fff"
-            android:textSize="22dp"
-
-            />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:padding="30dp"
-            android:src="@mipmap/clock"
-            android:background="#f9b258"
+            android:layout_marginRight="8dp"
+            android:background="#F8B257"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:30"
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAN 10, 2019"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/sun"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25&#xb0;"
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW YORK"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"/>
 
 
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:weightSum="2">
 
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:background="#95D8E9"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/email"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:background="#666666"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/cloud"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="8dp"
+            android:background="#F5815B"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WWW"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:background="#F8B257"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/clock"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="8dp"
+        android:background="#95D8E9"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOW PLAYING"
+            android:textSize="32dp"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@mipmap/musicplayer"
+            android:drawablePadding="16dp"/>
+    </LinearLayout>
 
 
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/simpleButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="16dp"
-        android:text="Now Playing"
-        android:textSize="40dp"
-        android:textColor="#fff"
-        android:padding="15dp"
-        android:drawableLeft="@mipmap/musicplayer"
-        android:background="#95d8e9"
-
-        />
 
 
 
 
 
 
-</LinearLayout>
+
+
+
+
+
+
